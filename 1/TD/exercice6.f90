@@ -9,9 +9,9 @@ PROGRAM equation_second_degre
   READ *, b
   READ *, c
 
-  IF (a== 0) THEN
-      IF (b==0) THEN
-          IF (c==0) THEN
+  IF (ABS(a) < 1.E-6) THEN
+      IF (ABS(b) < 1.E-6) THEN
+          IF (abs(c) < 1.E-6) THEN
               PRINT *, "Solutions infinies"
           ELSE
               PRINT *, "Pas de solutions"
